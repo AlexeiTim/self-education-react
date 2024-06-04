@@ -41,7 +41,7 @@ export class App extends Component<object, State> {
   }
 
   handleClickSearch = () => {
-    const search = this.state.search
+    const { search } = this.state
     peopleParamsStorage.set({ search })
     this.loadData({ search })
   }
