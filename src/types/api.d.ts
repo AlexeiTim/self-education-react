@@ -4,3 +4,7 @@ export interface TableData<T> {
   next: string
   results: T[]
 }
+
+export interface BaseResponse<T> {
+  data: T
+}

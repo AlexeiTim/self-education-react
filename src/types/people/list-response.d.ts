@@ -1,4 +1,4 @@
-export interface People {
+export interface PeopleListResponse {
   name: string
   height: string
   mass: string
