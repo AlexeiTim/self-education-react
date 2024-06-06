@@ -2,6 +2,9 @@ import React, { ReactNode } from "react"
 import { Flex } from "../UI"
 
 export class AppLayout extends React.Component<React.PropsWithChildren> {
+  constructor(props: React.PropsWithChildren) {
+    super(props)
+  }
   static Header = (props: React.PropsWithChildren) => (
     <div style={{ width: "100%", padding: "10px 0" }}>{props.children}</div>
   )
