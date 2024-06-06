@@ -2,9 +2,7 @@ import React, { ReactNode } from "react"
 
 interface Props {
   children: ReactNode
-  style: {
-    [key: string]: string | number
-  }
+  style: React.CSSProperties
 }
 export class Flex extends React.Component<Props> {
   constructor(props: Props) {
