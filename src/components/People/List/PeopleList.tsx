@@ -10,9 +10,9 @@ export class PeopleList extends React.Component<Props, State> {
 
   render(): React.ReactNode {
     return (
-      <Flex>
+      <Flex gap={10} justify="between">
         {this.props.peoples.map((people) => (
-          <PeopleCard people={people} key={people.name} />
+          <PeopleCard style={{ flexBasis: "30%" }} people={people} key={people.name} />
         ))}
       </Flex>
     )

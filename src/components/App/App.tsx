@@ -32,13 +32,17 @@ export class App extends Component<unknown, State> {
   }
 
   render(): ReactNode {
+    if (this.state.loading) return <Loader />
+
     return (
       <AppLayout>
         <AppLayout.Header>
           <PeopleSearch loadData={this.loadData} />
         </AppLayout.Header>
 
-        <AppLayout.Main>{this.state.loading ? <Loader /> : <PeopleList peoples={this.state.peoples} />}</AppLayout.Main>
+        <AppLayout.Main>
+          <PeopleList peoples={this.state.peoples} />
+        </AppLayout.Main>
       </AppLayout>
     )
   }

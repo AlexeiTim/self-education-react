@@ -1,0 +1,13 @@
+.root {
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.root:hover {
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
